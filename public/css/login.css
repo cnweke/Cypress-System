@@ -1,0 +1,32 @@
+body{
+    background-color: #ebebeb;
+    text-align: left;
+}
+
+span {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 500;
+    margin: 0px;
+    
+}
+#left{
+    float:left;
+}
+
+#right{
+    float: right;
+    
+}
+
+section{
+    margin: 20px 0px;
+
+}
+form{
+    margin-left: 500px;
+}
+
+button{
+    margin: 10px 30px;
+}

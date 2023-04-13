@@ -1,0 +1,57 @@
+body{
+    background-color: #ebebeb;
+    text-align: left;
+}
+span {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 500;
+    margin: 0px;
+    
+}
+#left{
+    float:left;
+}
+
+#right{
+    float: right;
+    
+}
+
+button{
+    margin-left: 100px;
+    font-size: 20px;
+    
+}
+
+input{
+    font-size: 19px;
+}
+
+section{
+    display: flex;
+    padding: 25px;
+
+}
+
+#img1{
+    height: 250px;
+    width: 320px;
+    padding:25px;
+}
+
+#img2{
+    height: 200px;
+    width: 350px;
+    padding: 50px;
+}
+
+#sec2{
+    text-align: right;
+
+}
+
+#sec2 > h1{
+     margin-right: 100px;
+     
+}

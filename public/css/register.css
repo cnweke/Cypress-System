@@ -1,0 +1,46 @@
+body{
+    background-color: #ebebeb;
+    text-align: left;
+}
+
+span {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 500;
+    margin: 0px;
+    
+}
+#left{
+    float:left;
+}
+
+#right{
+    float: right;
+    
+}
+
+section{
+    margin: 20px 0px;
+
+}
+form{
+    margin-left: 150px;
+}
+
+button{
+    margin: 10px 30px;
+}
+
+p{
+    margin-right: 100px;
+}
+
+#submitButton {
+    display: none;
+}
+
+/*
+#terms:checked + #submitButton{
+    display: block;
+}
+*/

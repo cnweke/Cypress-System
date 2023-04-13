@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel='stylesheet' href='css/login.css'/>
+    </head>
+    <body>
+        <header>
+            <span id="left">CYPRESS</span>
+            <span id ="right">City of Toronto</span> 
+            <br>
+            <br>
+            
+        </header>
+        <section>
+            <hr>
+            <!-- <h2>Welcome to Cypress Program!</h2> -->
+            <h3>You are currently at the Cypress Login Page. By logging into this system, you will be able to report a variety of problems as you have witnessed on the streets of Toronto</h3>
+
+            <br>
+            <div id="formDiv">
+            <form method='POST' action='/login'>
+
+                <label for='userName'>Username: </label>
+                <input id='userName' type='text' name='userName' placeholder='Enter Username'/>@cypress.on.ca<br><br>
+                
+                <label for='pass'>Password: </label>
+                <input id='pass' type='password' name='pass' placeholder='Enter Password'/><br><br>
+                
+                
+                <button type='submit'>Login</button>
+                <button onclick="window.location.href='/'" disabled>Cancel</button>
+            </form>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='css/reporting.css'>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+</head>
+
+<body>
+    <header>
+        <strong><span id="left">CYPRESS</span></strong>
+        <strong><span id ="right">City of Toronto</span> </strong>
+        <br>
+        <br>
+        <a href="/">LOGOUT</a>
+        <hr>
+    </header>
+    <div id="addressInp">
+        <form action="/reporting" method="POST">
+            <label for='address'>Address</label>
+            <input id='address' type='text' name='address' size="100" /><br><br>
+            <p>PROBLEMS AT THE SITE:</p>
+            <hr>
+            <input type="radio" value="utility" name="links">Utility Failures</input><br><br>
+            <input type="radio" value="potHoles" name="links">Potholes</input><br><br>
+            <input type="radio" value="cityPropertyVandalism" name="links">City Property Vandalism</input><br><br>
+            <input type="radio" value="erodedStreets" name="links">Eroded Streets</input><br><br>
+            <input type="radio" value="treeCollapse" name="links">Tree Collapse</input><br><br>
+            <input type="radio" value="floodedStreets" name="links">Flooded Streets</input><br><br>
+            <input type="radio" value="mouldAndSporeGrowth" name="links">Mould and Spore Growth</input><br><br>
+            <input type="radio" value="garbageAndOtherRoadBlockingObjects" name="links">Garbage and Other Road Blocking Objects</input><br><br>
+            <button type="submit" >Report</button>
+            <button disabled>Cancel</button>
+        </form>     
+        <div id="map"></div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+</body>
+
+<script>
+ 
+</script>
+</html>
